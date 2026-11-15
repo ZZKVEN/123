@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Задание на джава 2</title>
+</head>
+<body>
+
+    <h1>Анкета пользователя</h1>
+
+    <p><a href="sait.html">Вернуться на главную страницу</a></p>
+
+    <form action="#" method="post">
+        <p>
+            <label for="username">Ваше имя (текст):</label><br>
+            <input type="text" id="username" name="username" placeholder="Введите имя">
+        </p>
+
+        <p>
+            <label for="age">Ваш возраст (число):</label><br>
+            <input type="number" id="age" name="age" min="1" max="120" placeholder="18">
+        </p>
+
+        <p>
+            <label for="userpass">Пароль:</label><br>
+            <input type="password" id="userpass" name="userpass" placeholder="Введите пароль">
+        </p>
+
+        <p>
+            Выберите ваш пол (радиокнопки):<br>
+            <label><input type="radio" name="gender" value="male"> Мужской</label><br>
+            <label><input type="radio" name="gender" value="female"> Женский</label>
+        </p>
+
+        <p>
+            Ваши увлечения (чекбоксы):<br>
+            <label><input type="checkbox" name="hobby" value="coding"> Программирование</label><br>
+            <label><input type="checkbox" name="hobby" value="sport"> Спорт</label><br>
+            <label><input type="checkbox" name="hobby" value="music"> Музыка</label>
+        </p>
+        <p>
+            <button type="submit">Отправить данные</button>
+        </p>
+    </form>
+
+</body>
+</html>
