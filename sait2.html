@@ -3,8 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Задание на джава 2</title>
+    <style>
+    .btn {
+      display: flex;
+      justify-content: center;
+      padding: 10px 20px;
+      colour: red;
+    }
+    </style>
 </head>
 <body>
+
+    <div class="btn">
+        <a href="sait.html"><button>На главную</button></a>
+    </div>
 
     <h1>Анкета пользователя</h1>
 
@@ -26,6 +38,16 @@
             <input type="password" id="userpass" name="userpass" placeholder="Введите пароль">
         </p>
 
+	<p>
+            <label for="useremail">Электронная почта (Email):</label><br>
+            <input type="email" id="useremail" name="useremail" placeholder="example@mail.ru">
+        </p>
+
+	<p>
+            <label for="avatar">Загрузите аватар (изображение):</label><br>
+            <input type="file" id="avatar" name="avatar" accept="image/*">
+        </p>
+
         <p>
             Выберите ваш пол (радиокнопки):<br>
             <label><input type="radio" name="gender" value="male"> Мужской</label><br>
@@ -38,6 +60,14 @@
             <label><input type="checkbox" name="hobby" value="sport"> Спорт</label><br>
             <label><input type="checkbox" name="hobby" value="music"> Музыка</label>
         </p>
+
+	<p>
+            <label>
+                <input type="checkbox" name="newsletter" value="yes">
+                Согласен на получение еженедельной рассылки со статьями
+            </label>
+       </p>
+
         <p>
             <button type="submit">Отправить данные</button>
         </p>
